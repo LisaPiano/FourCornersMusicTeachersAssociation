@@ -170,7 +170,7 @@ header, .header1 .header2, .header3, .header4 {
 .container2 {
     display: grid;
     padding-top: 100px; 
-    width: 100%;
+    width: 100vw;
     grid-template-areas:
     "imageKristen textKristen"
     "textMika imageMika";
@@ -182,28 +182,32 @@ header, .header1 .header2, .header3, .header4 {
 
 .imageKristen {
     grid-area: imageKristen;
+    border: 2px solid red; 
 }
 
 .textKristen {
     grid-area: textKristen;
     font-size: 30px;
-    width: 750px;
+    width: 90%;
     margin-top: 80px; 
-    margin-right: 150px; 
-    margin-left: 30px; 
+    border: 2px solid red; 
+    text-align: center;
 }
 
 .textMika {
-    width: 600px;
     grid-area: textMika;
     font-size: 30px;
-    margin-left: 250px;
-    margin-top: 180px;
-    margin-bottom: 50px;
+    width: 90%;
+    margin-top: 300px;
+    padding-bottom: 140px; 
+    border: 2px solid red; 
 }
 
 .imageMika {
     grid-area: imageMika;
+    margin-top: 80px; 
+    border: 2px solid red; 
+    text-align: center;
 }
 
 figcaption {
