@@ -278,8 +278,35 @@ footer {
     color: white;
     padding-top: 30px; 
 }
+
+/* 
+/* 
+==upcomingEventsAndSchedule======================================================================================= */
  
-  
+  .containerEvents {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      justify-content: center;
+      align-items: start;
+      padding: 20px; 
+      font-size: 20px;
+  }
+
+  .introEvents, .event1, .event2 {
+      padding: 2em;
+      line-height: 1.8em;
+
+  }
+
+ 
+  .eventHeading {
+      line-height: 1.2em;
+      padding-top: 1em; 
+      padding-bottom: .25em;
+      font-size: 60px;
+      color: #9048bf;
+  }
   
 
 /* Media Queries =====================================================================*/
