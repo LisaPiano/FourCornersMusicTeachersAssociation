@@ -238,7 +238,7 @@ figcaption {
 
     
 /* upcomingEventsAndSchedule =====================================================================*/
-/
+
 #eventHeadingIntro {
     font-size: 80px; 
     text-align: center;
@@ -355,6 +355,7 @@ li:first-child {
 .teacherList {
     font-size: 25px;
     line-height: 1.4em;
+}
 }
 
 /* for larger than mobile devices =====================================================================*/
@@ -490,6 +491,4 @@ footer {
     .hide:hover {
         height: 50px;
 }
-
-
 }
