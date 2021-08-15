@@ -18,16 +18,16 @@ body {
 
 .background {
     background-image: url(../images/bodyBackground.jpg);
+
 }
 
 
 /* overall space taken up by main title */
 header, .header1 .header2, .header3, .header4 {
-    max-width: 100%; 
-    padding-top: 150px; 
     background-repeat: no-repeat;
-    background-size: 100% 500px; 
+    background-size: 100%; 
     transition: all .6s ease-in-out;
+
 }
 
 .header1, .header2, .header3, .header4 {
@@ -65,19 +65,23 @@ header, .header1 .header2, .header3, .header4 {
 /* words--Four Corners Music Teachers Association */
 .title {
     display: block;
+    height: 220px; 
+    width: 100%;
+    padding-top: 50px; 
+    padding-bottom: 20px; 
     text-align: center;
-    font-size: 55px;
+    font-size: 45px;
     background-color: #f47a3d;
     color: white;
-    font-weight: 900px;
+    margin-top: 280px; 
 }
 .subtitle {
     color: rgb(255, 255, 255);
     text-align: center;
-    font-size: 50px; 
-    font-weight: 900px; 
+    padding-top: 20px;
+    font-size: 25px; 
     background-color: rgb(95, 95, 95);
-
+    height: 80px; 
 }
 
 
@@ -87,21 +91,19 @@ header, .header1 .header2, .header3, .header4 {
 /* Style the overall nav bar */
 
 .topnav {
-    position: -webkit-sticky; 
-    position: sticky; 
+    position: fixed; 
     top: 0; 
+    z-index: 1;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    line-height: 3em; 
+    justify-content: center;
+    align-items: center;
+    line-height:3em; 
     background-color: #333;
-    height: 20px; 
-    top: 0;
-    margin-top: 50px; 
-    padding-top: 30px; 
-    padding-left: 60px; 
-    padding-right: 60px; 
-    padding-bottom: 352px; 
+    height: 110px; 
+    width: 100%; 
+    padding-top: 70px;
+    padding-bottom: 118px; 
     text-align: center;
 }
 
@@ -123,7 +125,7 @@ header, .header1 .header2, .header3, .header4 {
     color: yellow;
 } 
 
-/* Style for the links-horizontal */
+/* Style for the links */
 .topnav a {
     color: #f2f2f2; 
     text-decoration: none;
@@ -178,26 +180,37 @@ header, .header1 .header2, .header3, .header4 {
 
 .container2 {
 width: 100%;
+display: block; 
 }
 
 .imageKristen {
     text-align: center;
 }
+.imageMika {
+    text-align: center; 
+}
 .textKristen {
     font-size: 30px;
-    padding-bottom: 50px; 
+    text-align: center; 
+    padding: 5px 5px 50px; 
 }
 
 .textMika {
     font-size: 30px; 
     padding-bottom: 50px; 
+    text-align: center; 
+    padding: 5px; 
+}
+
+figcaption {
+    padding: 7px; 
 }
 
 .topButton {
     font-size: 40px;
     text-align: center;
-    margin-top: 200px;
     margin-bottom: 50px;
+    margin-top: 40px; 
 }
 
 .fa-angle-double-up {
@@ -206,23 +219,26 @@ width: 100%;
     }
 
     .fa-angle-double-up:hover {
-        transform: scale(1.7, 1.7);
+        transform: scale(1.5, 1.5);
         color: yellow;
     }
 
     footer {
-        background-color: #f47a3d;
-        height: 5em; 
-    }
-
-    .footerText {
+        background-color: #333;
+        color: white; 
+        overflow: hidden;
+        height: 80px; 
+        bottom: 0;
+        padding-top: 20px;  
+        width: 100%;
         text-align: center;
-        vertical-align: center; 
     }
+    
+   
 
     
 /* upcomingEventsAndSchedule =====================================================================*/
-
+/
 #eventHeadingIntro {
     font-size: 80px; 
     text-align: center;
@@ -233,13 +249,11 @@ width: 100%;
     text-align: center;
 }
 
-.eventHeading {
-    font-size: 40px; 
-}
+ 
 
 .event1, .event2 {
     padding: 40px; 
-}
+}    
 
 
 
@@ -250,20 +264,8 @@ width: 100%;
 
 
 
-/* footer =====================================================================*/
 
-footer {
-    background-color: #333;
-    color: white; 
-    overflow: hidden;
-    height: 80px; 
-    bottom: 0;
-    padding-top: 20px;  
-    width: 100%;
-    text-align: center;
-}
 
-/* 
 ==List of Teachers======================================================================================= */
 .teacherList {
     text-align: left;
@@ -271,20 +273,19 @@ footer {
     line-height: 1.4em;
 }
 
-li {
+ li {
     padding: 30px; 
-    padding-left: 200px; 
-}
+} 
 
 li:first-child {
     padding-top: 180px; 
-}
+}  
 
 /* 
 /* 
 ==photos======================================================================================= */
 
-.mySlides {
+/* .mySlides {
     text-align: center;
     padding-bottom: 100px; 
 }
@@ -305,13 +306,14 @@ li:first-child {
 }
 
 
+
 #lisapiano {
     width: 80%;
 }
 
 #fallingNotes {
     width: 100%;
-}
+} */
 
 
 
@@ -328,8 +330,21 @@ li:first-child {
 
 /* Media Queries =====================================================================*/
 
+
+/* for large mobile devices =====================================================================*/
+@media screen and (min-width: 481px) {
+    .title {
+        height: 100px; 
+    }
+
+}
+
 /* for larger than mobile devices =====================================================================*/
 @media screen and (min-width: 769px) {
+
+    header, .header1 .header2, .header3, .header4 {
+        padding-top: 30px; 
+    }
     
 #fa {
     display: none; 
@@ -339,7 +354,7 @@ li:first-child {
     display: flex;
     flex-direction: row;
     background-color: #333;
-    height: 80px; 
+    height: 40px; 
     top: 0;
     padding-top: 30px; 
     padding-bottom: 100px; 
@@ -366,7 +381,12 @@ li:first-child {
 }
 
 .title {
-    font-size: 75px; 
+    font-size: 60px; 
+    height: 140px; 
+    padding-top: 40px; 
+    padding-left: 10px;
+    padding-right: 10px; 
+    margin-top: 300px; 
 }
 
 .logo:hover {
@@ -384,9 +404,20 @@ li:first-child {
     padding-bottom: 12px; 
 }
 
+.container2 {
+    padding: 30px 30px 10px; 
+}
 
-.topButton {
-    margin-top: 300px;     
+.imageKristen {
+    float: right;
+}
+
+.imageMika {
+    float: left; 
+}
+
+footer {
+    height: 53px; 
 }
 }
 
