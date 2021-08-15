@@ -266,26 +266,48 @@ figcaption {
 
 
 
-==List of Teachers======================================================================================= */
+/* ==List of Teachers=======================================================================================  */
+
+.teachersBody {
+    background-color: cornsilk;
+}
 .teacherList {
     text-align: left;
-    font-size: 30px;
-    line-height: 1.4em;
+    line-height: 1.2em;
+    padding-left: 70px; 
+}
+
+ul {
+    display: list-item; 
+    list-style-image: url("../images/eighth-note.svg");
 }
 
  li {
-    padding: 30px; 
+    padding: 10px;
+    font-size: 150px
+} 
+
+ .email, .instrument, .phone {
+    font-size: 15px;
 } 
 
 li:first-child {
-    padding-top: 180px; 
+    padding-top: 100px; 
 }  
 
-/* 
+.teacherName {
+    font-size: 20px;
+    line-height: 1.5em;
+    color: darkblue;
+}
+
+
+
+
 /* 
 ==photos======================================================================================= */
 
-/* .mySlides {
+.mySlides {
     text-align: center;
     padding-bottom: 100px; 
 }
@@ -313,17 +335,7 @@ li:first-child {
 
 #fallingNotes {
     width: 100%;
-} */
-
-
-
-
-
-
-
-
-    
-    
+} 
 
 
 
@@ -337,6 +349,12 @@ li:first-child {
         height: 100px; 
     }
 
+    .teacherName {
+        font-size: 30px;
+}
+.teacherList {
+    font-size: 25px;
+    line-height: 1.4em;
 }
 
 /* for larger than mobile devices =====================================================================*/
@@ -419,6 +437,10 @@ li:first-child {
 footer {
     height: 53px; 
 }
+
+.email, .instrument, .phone {
+    font-size: 25px;
+} 
 }
 
 /* for larger devices =====================================================================*/
