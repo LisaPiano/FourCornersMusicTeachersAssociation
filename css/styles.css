@@ -21,7 +21,6 @@ body {
 }
 
 
-
 /* overall space taken up by main title */
 header, .header1 .header2, .header3, .header4 {
     max-width: 100%; 
@@ -88,6 +87,9 @@ header, .header1 .header2, .header3, .header4 {
 /* Style the overall nav bar */
 
 .topnav {
+    position: -webkit-sticky; 
+    position: sticky; 
+    top: 0; 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -175,58 +177,26 @@ header, .header1 .header2, .header3, .header4 {
 /* Styles for Container2=====================================================================  */
 
 .container2 {
-    display: grid;
-    padding: 100px 5px 10px; 
-    width: 100%;
-    grid-template-areas:
-    "imageKristen" 
-    "textKristen"
-    "imageMika" 
-    "textMika";
-    grid-template-rows: 25%, 25%, 25%, 25%;
-    grid-template-columns: 98%; 
-    justify-content: center;
-    align-items: center;
+width: 100%;
 }
 
 .imageKristen {
-    grid-area: imageKristen;
-    border: 2px solid red;
     text-align: center;
 }
-
 .textKristen {
-    grid-area: textKristen;
     font-size: 30px;
-    border: 2px solid red;
-    padding-bottom: 30px; 
-   
+    padding-bottom: 50px; 
 }
 
 .textMika {
-    grid-area: textMika;
-    font-size: 30px;
-    border: 2px solid red;
-  
-}
-
-.imageMika {
-    grid-area: imageMika;
-    border: 2px solid red;
-    text-align: center;
-}
-
-figcaption {
-    text-align: center;
-    font-size: 20px; 
-    padding-bottom: 25px; 
-
+    font-size: 30px; 
+    padding-bottom: 50px; 
 }
 
 .topButton {
     font-size: 40px;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 200px;
     margin-bottom: 50px;
 }
 
@@ -240,10 +210,36 @@ figcaption {
         color: yellow;
     }
 
+    footer {
+        background-color: #f47a3d;
+        height: 5em; 
+    }
 
+    .footerText {
+        text-align: center;
+        vertical-align: center; 
+    }
 
+    
+/* upcomingEventsAndSchedule =====================================================================*/
 
+#eventHeadingIntro {
+    font-size: 80px; 
+    text-align: center;
+    padding: 40px; 
+}
 
+.introEvents {
+    text-align: center;
+}
+
+.eventHeading {
+    font-size: 40px; 
+}
+
+.event1, .event2 {
+    padding: 40px; 
+}
 
 
 
@@ -262,7 +258,7 @@ footer {
     overflow: hidden;
     height: 80px; 
     bottom: 0;
-    padding-top: 20px; 
+    padding-top: 20px;  
     width: 100%;
     text-align: center;
 }
@@ -270,9 +266,18 @@ footer {
 /* 
 ==List of Teachers======================================================================================= */
 .teacherList {
-    text-align: center;
+    text-align: left;
     font-size: 30px;
     line-height: 1.4em;
+}
+
+li {
+    padding: 30px; 
+    padding-left: 200px; 
+}
+
+li:first-child {
+    padding-top: 180px; 
 }
 
 /* 
@@ -289,10 +294,24 @@ footer {
     padding-top: 30px; 
 }
 
+#childrenConcert {
+    width: 80%; 
+
+}
 
 
+#movingPianos {
+    width: 90%;
+}
 
 
+#lisapiano {
+    width: 80%;
+}
+
+#fallingNotes {
+    width: 100%;
+}
 
 
 
@@ -337,7 +356,7 @@ footer {
     color: white;
     height: 77px; 
     padding-left: 45px;
-    padding-right: 45px; 
+    padding-right: 35px; 
     padding-bottom: 12px; 
 }
 
@@ -361,36 +380,63 @@ footer {
     color: black;
     height: 77px;
     padding-left: 45px;
-    padding-right: 45px; 
+    padding-right: 35px; 
     padding-bottom: 12px; 
 }
 
 
-.container2 {
-    display: grid;
-    padding: 100px 5px 10px; 
-    width: 100%;
-    grid-template-areas:
-    "imageKristen textKristen"
-    "textMika imageMika";
-    grid-template-rows: 866px 750px;
-    grid-template-columns: 50% 50%;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.imageKristen {
-    margin-top: 100px; 
-}
-
-.textMika {
-}
 .topButton {
-    margin-top: 200px;     
+    margin-top: 300px;     
+}
 }
 
+/* for larger devices =====================================================================*/
+@media screen and (min-width: 1025px) {
 
+    
 
+#childrenConcert {
+    width: 50%; 
+        
+}
+
+#pianoAcademy {
+    height: 500px; 
+    width: 500px; 
+}
+
+#movingPianos {
+    width: 60%;
+}
+
+#studentsMountain {
+    height: 500px; 
+    width: 500px; 
+}
+
+#lisapiano {
+    height: 500px;
+    width: 500px; 
+}
+
+#fallingNotes {
+    width: 100%;
+}  
+
+}
+
+/* Media Queries =====================================================================*/
+
+/* for larger screens =====================================================================*/
+
+@media screen and (min-width: 1250px) {
+    .topnav a.active {
+        height: 50px; 
+    }
+
+    .hide:hover {
+        height: 50px;
+}
 
 
 }
