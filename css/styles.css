@@ -27,7 +27,6 @@ header, .header1 .header2, .header3, .header4 {
     background-repeat: no-repeat;
     background-size: 100%; 
     transition: all .6s ease-in-out;
-
 }
 
 .header1, .header2, .header3, .header4 {
@@ -66,19 +65,19 @@ header, .header1 .header2, .header3, .header4 {
 .title {
     display: block;
     height: 220px; 
-    width: 100%;
-    padding-top: 50px; 
+    width: 100vw;
+    padding-top: 70px; 
     padding-bottom: 20px; 
     text-align: center;
     font-size: 45px;
     background-color: #f47a3d;
     color: white;
-    margin-top: 280px; 
+    margin-top: 310px; 
 }
 .subtitle {
     color: rgb(255, 255, 255);
     text-align: center;
-    padding-top: 20px;
+    padding-top: 42px;
     font-size: 25px; 
     background-color: rgb(95, 95, 95);
     height: 80px; 
@@ -98,12 +97,11 @@ header, .header1 .header2, .header3, .header4 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    line-height:3em; 
+    line-height: 2.5em; 
     background-color: #333;
-    height: 110px; 
-    width: 100%; 
-    padding-top: 70px;
-    padding-bottom: 118px; 
+    height: 200px; 
+    width: 100vw; 
+    padding-top: 168px;
     text-align: center;
 }
 
@@ -130,6 +128,7 @@ header, .header1 .header2, .header3, .header4 {
     color: #f2f2f2; 
     text-decoration: none;
     font-size: 17px; 
+    margin-bottom: 5px; 
 }
 
 .change {
@@ -142,7 +141,10 @@ header, .header1 .header2, .header3, .header4 {
 .hide:hover {
     background-color: #ddd;
     color: black;
-    height: 40px;
+    height: 34px;
+    width: 150px; 
+    margin-top: 10px; 
+    padding-bottom: 12px; 
 }
 
 
@@ -151,8 +153,10 @@ header, .header1 .header2, .header3, .header4 {
 .topnav a.active {
     background-color: #f47a3d;
     color: white;
-    height: 40px; 
-    padding-bottom: 6px; 
+    height: 34px; 
+    width: 150px; 
+    margin-top: 5px; 
+    padding-bottom: 12px; 
 }
 
 
@@ -164,6 +168,7 @@ header, .header1 .header2, .header3, .header4 {
  .logo {
     height: 80px;
     width: 80px; 
+    margin-bottom: 140px; 
     transition: all .2s ease-in-out;
 } 
 
@@ -193,6 +198,8 @@ display: block;
     font-size: 30px;
     text-align: center; 
     padding: 5px 5px 50px; 
+    margin-left: 30px; 
+    margin-right: 30px;
 }
 
 .textMika {
@@ -200,20 +207,27 @@ display: block;
     padding-bottom: 50px; 
     text-align: center; 
     padding: 5px; 
+    margin-right: 30px;
+    margin-left: 30px; 
 }
 
 figcaption {
     padding: 7px; 
 }
 
-.topButton {
+a:hover {
+    color: yellow; 
+    background-color: black;
+}
+
+.topButton, .topButtonTeach {
     font-size: 40px;
     text-align: center;
     margin-bottom: 50px;
     margin-top: 40px; 
 }
 
-.fa-angle-double-up {
+.fa-angle-double-up, .fa-angle-double-upTeach {
     transition: all .2s ease-in-out;
     margin-left: 20px; 
     }
@@ -221,6 +235,13 @@ figcaption {
     .fa-angle-double-up:hover {
         transform: scale(1.5, 1.5);
         color: yellow;
+        background-color: lightgray;
+    }
+
+    .fa-angle-double-upTeach:hover {
+        transform: scale(1.5, 1.5);
+        color: purple;
+        background-color: cornsilk; 
     }
 
     footer {
@@ -239,20 +260,26 @@ figcaption {
     
 /* upcomingEventsAndSchedule =====================================================================*/
 
+
+
 #eventHeadingIntro {
-    font-size: 80px; 
+    margin-top: 50px; 
+    margin-bottom: 20px; 
     text-align: center;
-    padding: 40px; 
+    font-size: 40px;
 }
 
-.introEvents {
+.eventHeadingPara {
     text-align: center;
+    font-size: 30px; 
 }
 
- 
-
+.eventHeading {
+    margin-bottom: 10px; 
+    font-size: 25px; 
+}
 .event1, .event2 {
-    padding: 40px; 
+     padding: 40px;  
 }    
 
 
@@ -322,6 +349,9 @@ li:first-child {
 
 }
 
+#congratsYAF {
+    width: 80%; 
+}
 
 #movingPianos {
     width: 90%;
@@ -345,6 +375,7 @@ li:first-child {
 
 /* for large mobile devices =====================================================================*/
 @media screen and (min-width: 481px) {
+
     .title {
         height: 100px; 
     }
@@ -374,6 +405,7 @@ li:first-child {
     flex-direction: row;
     background-color: #333;
     height: 40px; 
+    line-height: 2em;
     top: 0;
     padding-top: 30px; 
     padding-bottom: 100px; 
@@ -388,15 +420,16 @@ li:first-child {
 .topnav a.active {
     background-color: #f47a3d;
     color: white;
-    height: 77px; 
-    padding-left: 45px;
-    padding-right: 35px; 
-    padding-bottom: 12px; 
+    height: 48px; 
+    padding-left: 26px;
+    padding-right: 25px; 
+    padding-bottom: 8px; 
 }
 
 .topnav a {
     margin-right: 40px; 
     width: 150px; 
+    margin-top: 50px; 
 }
 
 .title {

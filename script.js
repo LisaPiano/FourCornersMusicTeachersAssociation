@@ -12,8 +12,8 @@
     
      hamburger.addEventListener("click", () => { 
 
-        for(let num = 0; num < change.length; num++){
-            if (hide[num].classList.contains("change")){
+        for(let num = 0; num < change.length; num++) {
+            if (hide[num].classList.contains("change")) {
                 hide[num].classList.remove("change");
                 change[num].classList +=(" done");
             } else {
