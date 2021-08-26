@@ -168,12 +168,15 @@ header, .header1 .header2, .header3, .header4 {
  .logo {
     height: 80px;
     width: 80px; 
-    margin-bottom: 140px; 
     transition: all .2s ease-in-out;
 } 
 
 .logo:hover {
     transform: scale(1.2, 1.2);
+}
+
+.logoTop {
+    margin-bottom: 145px; 
 }
 
  img {
@@ -211,11 +214,21 @@ display: block;
     margin-left: 30px; 
 }
 
+a.email {
+    font-size: 30px;
+}
+
+a.yaf {
+    font-size: 20px; 
+}
+
+
+
 figcaption {
     padding: 7px; 
 }
 
-a:hover {
+.email:hover, .yaf:hover {
     color: yellow; 
     background-color: black;
 }
@@ -420,10 +433,10 @@ li:first-child {
 .topnav a.active {
     background-color: #f47a3d;
     color: white;
-    height: 48px; 
+    height: 0px; 
     padding-left: 26px;
     padding-right: 25px; 
-    padding-bottom: 8px; 
+    padding-bottom: 12px; 
 }
 
 .topnav a {
@@ -441,16 +454,18 @@ li:first-child {
     margin-top: 300px; 
 }
 
+.logoTop {
+    margin-bottom: 0px; 
+}
 .logo:hover {
     transform: scale(1.7, 1.7);
 }
 
-/* Change the color of the links on hover, but NOT the logo*/
+/* Change the color of the nav links on hover, but NOT the logo*/
 
 .hide:hover {
     background-color: #ddd;
     color: black;
-    height: 77px;
     padding-left: 45px;
     padding-right: 35px; 
     padding-bottom: 12px; 
