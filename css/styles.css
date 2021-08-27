@@ -228,7 +228,7 @@ figcaption {
     padding: 7px; 
 }
 
-.email:hover, .yaf:hover {
+.email:hover, .yaf:hover, .eventLink:hover {
     color: yellow; 
     background-color: black;
 }
@@ -291,8 +291,9 @@ figcaption {
     margin-bottom: 10px; 
     font-size: 25px; 
 }
-.event1, .event2 {
+.event {
      padding: 40px;  
+     line-height: 4em;
 }    
 
 
@@ -311,6 +312,33 @@ figcaption {
 .teachersBody {
     background-color: cornsilk;
 }
+
+.boardOfDirectors {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    font-size: 50px; 
+    line-height: 3.5em;
+    border: 20px solid #545ec4;
+    margin-bottom: 100px; 
+    margin-top: 40px; 
+    margin-right: 20px; 
+    margin-left: 20px; 
+    padding-bottom: 30px; 
+    background-color: lightgoldenrodyellow;
+}
+
+.titleDirectors {
+    margin-top: 10px; 
+    margin-bottom: 30px; 
+    font-size: 50px; 
+}
+
+.imageBoard {
+    height: 50px;
+    width: 50px;  
+}
+
 .teacherList {
     text-align: left;
     line-height: 1.2em;
@@ -324,7 +352,7 @@ ul {
 
  li {
     padding: 10px;
-    font-size: 150px
+    font-size: 50px
 } 
 
  .email, .instrument, .phone {
@@ -436,7 +464,7 @@ li:first-child {
     height: 0px; 
     padding-left: 26px;
     padding-right: 25px; 
-    padding-bottom: 12px; 
+    padding-bottom: 70px; 
 }
 
 .topnav a {
@@ -477,10 +505,17 @@ li:first-child {
 
 .imageKristen {
     float: right;
+    margin-right: 50px;
+    padding-left: 12px;
 }
 
 .imageMika {
     float: left; 
+    margin-left: 50px;
+    padding-right: 12px; 
+}
+figcaption {
+    margin-right: 32px; 
 }
 
 footer {
@@ -534,6 +569,7 @@ footer {
 @media screen and (min-width: 1250px) {
     .topnav a.active {
         height: 50px; 
+        padding-bottom: 12px; 
     }
 
     .hide:hover {
