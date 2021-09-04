@@ -8,7 +8,6 @@
     margin: 0;
 }
 
-
 body {
     background-color: lightgray;
     font-family: 'Georama', sans-serif;
@@ -20,7 +19,6 @@ body {
     background-image: url(../images/bodyBackground.jpg);
 
 }
-
 
 /* overall space taken up by main title */
 header, .header1 .header2, .header3, .header4 {
@@ -43,7 +41,6 @@ header, .header1 .header2, .header3, .header4 {
         opacity: 1;
     }
 }
-
 
 .header1 {
     background-image: url(../images/Piano-keys.jpg);
@@ -74,6 +71,7 @@ header, .header1 .header2, .header3, .header4 {
     color: white;
     margin-top: 310px; 
 }
+
 .subtitle {
     color: rgb(255, 255, 255);
     text-align: center;
@@ -104,8 +102,6 @@ header, .header1 .header2, .header3, .header4 {
     padding-top: 168px;
     text-align: center;
 }
-
-
 
 /* show the hamburger */
 
@@ -194,9 +190,11 @@ display: block;
 .imageKristen {
     text-align: center;
 }
+
 .imageMika {
     text-align: center; 
 }
+
 .textKristen {
     font-size: 30px;
     text-align: center; 
@@ -221,8 +219,6 @@ a.email {
 a.yaf {
     font-size: 20px; 
 }
-
-
 
 figcaption {
     padding: 7px; 
@@ -268,12 +264,8 @@ figcaption {
         text-align: center;
     }
     
-   
 
-    
 /* upcomingEventsAndSchedule =====================================================================*/
-
-
 
 #eventHeadingIntro {
     margin-top: 50px; 
@@ -291,21 +283,31 @@ figcaption {
     margin-bottom: 10px; 
     font-size: 25px; 
 }
+
 .event {
      padding: 40px;  
-     line-height: 4em;
+     line-height: 2em;
 }    
 
+.contactConcert {
 
+    font-size: 25px; 
+    margin-left: 20px; 
+    margin-right: 20px; 
+    margin-top: 30px; 
+    text-align: center; 
+}
 
+.calendar {
+    width: 80%; 
+    height: 80%;     
+    margin-top: 40px; 
+    margin-bottom: 40px; 
+}
 
-
-
-
-
-
-
-
+.printCalendar {
+    text-align: center;    
+}
 
 /* ==List of Teachers=======================================================================================  */
 
@@ -315,28 +317,32 @@ figcaption {
 
 .boardOfDirectors {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 120px; 
     text-align: center;
-    font-size: 50px; 
-    line-height: 3.5em;
-    border: 20px solid #545ec4;
+    font-size: 20px; 
+    line-height: 1.5em;
+    border: 20px solid #000;
     margin-bottom: 100px; 
     margin-top: 40px; 
     margin-right: 20px; 
     margin-left: 20px; 
-    padding-bottom: 30px; 
+    padding-bottom: 20px; 
     background-color: lightgoldenrodyellow;
 }
 
-.titleDirectors {
-    margin-top: 10px; 
-    margin-bottom: 30px; 
-    font-size: 50px; 
+.titleDirectors, .sub {
+    font-size: 20px; 
+    margin-top: 30px;
+    margin-bottom: 80px;
 }
 
 .imageBoard {
-    height: 50px;
-    width: 50px;  
+    height: 100px;
+    width: 100px;  
+    margin-bottom: 40px; 
+    margin-left: 10px; 
+    height: auto; 
 }
 
 .teacherList {
@@ -370,8 +376,6 @@ li:first-child {
 }
 
 
-
-
 /* 
 ==photos======================================================================================= */
 
@@ -387,18 +391,18 @@ li:first-child {
 
 #childrenConcert {
     width: 80%; 
+    height: auto; 
 
 }
 
 #congratsYAF {
     width: 80%; 
+    height: auto; 
 }
 
 #movingPianos {
     width: 90%;
 }
-
-
 
 #lisapiano {
     width: 80%;
@@ -407,6 +411,10 @@ li:first-child {
 #fallingNotes {
     width: 100%;
 } 
+
+.photo {
+    height: auto;     
+}
 
 
 
@@ -514,6 +522,7 @@ li:first-child {
     margin-left: 50px;
     padding-right: 12px; 
 }
+
 figcaption {
     margin-right: 32px; 
 }
@@ -525,12 +534,20 @@ footer {
 .email, .instrument, .phone {
     font-size: 25px;
 } 
+
+.boardOfDirectors {
+    line-height: 3.5em;
+}
+
+.imageBoard {
+    width: 150px;
+}
+
 }
 
 /* for larger devices =====================================================================*/
 @media screen and (min-width: 1025px) {
 
-    
 
 #childrenConcert {
     width: 50%; 
@@ -559,7 +576,6 @@ footer {
 #fallingNotes {
     width: 100%;
 }  
-
 }
 
 /* Media Queries =====================================================================*/
