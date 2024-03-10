@@ -207,7 +207,7 @@ header, .header1 .header2, .header3, .header4 {
 
  /*change the background color of the dropdown button when the dropdown content is shown*/
  .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color: #f47a3d;
  }
 
 
