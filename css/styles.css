@@ -159,7 +159,7 @@ header, .header1 .header2, .header3, .header4 {
 
 /* Styling for the DROPDOWN MENU===========================================*/
 
-/* Styling for the button */
+/* Styling for the initial visual link */
 .dropbtn {
     background-color: #333;
     color: white;
@@ -186,7 +186,7 @@ header, .header1 .header2, .header3, .header4 {
     z-index: 1;
     width: 100%;
 }
-/*LInks inside the dropdown*/
+/*Links inside the dropdown*/
 .dropdown-content a {
     color: black;
     /* padding: 12px 16px; */
@@ -196,16 +196,15 @@ header, .header1 .header2, .header3, .header4 {
 
 
 /*Change the color of dropdown links on hover*/
-
-/* .dropdown-content a:hover {
+ .dropdown-content a:click {
     background-color:  #f47a3d;
     text-align: center;
     margin: auto;
-} */
+} 
 
 /*Show the dropdown menu on hover*/
 
-.dropdown:hover .dropdown-content {
+.dropdown:click .dropdown-content {
     display: block;
     width: 100%;
 }
