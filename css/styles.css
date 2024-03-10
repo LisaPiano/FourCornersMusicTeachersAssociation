@@ -202,11 +202,11 @@ header, .header1 .header2, .header3, .header4 {
     background-color: #ddd;
  }
 
-  /* show the dropdown menu on hover
+  /* show the dropdown menu on hover*/
  .dropdown:hover .dropdown-content {
     display: block;
  } 
-  */
+
 
 
 
