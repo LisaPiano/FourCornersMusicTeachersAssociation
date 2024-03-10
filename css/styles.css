@@ -199,14 +199,15 @@ header, .header1 .header2, .header3, .header4 {
 
 .dropdown-content a:hover {
     background-color:  #f47a3d;
-    /* text-align: center;
-    margin: auto; */
+    text-align: center;
+    margin: auto;
 }
 
 /*Show the dropdown menu on hover*/
 
 .dropdown:hover .dropdown-content {
     display: block;
+    width: 100%;
 }
 
 
