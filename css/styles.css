@@ -161,11 +161,12 @@ header, .header1 .header2, .header3, .header4 {
 
 /* Dropdown BUtton */
  .dropbtn {
-    background-color: #04AA6D;
+    background-color: #f47a3d;
     color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
+    height: 34px; 
+    width: 150px; 
+    margin-top: 5px; 
+    padding-bottom: 12px; 
  }
 
  .dropdown {
