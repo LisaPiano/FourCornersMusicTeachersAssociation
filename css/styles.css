@@ -189,7 +189,7 @@ header, .header1 .header2, .header3, .header4 {
 /*LInks inside the dropdown*/
 .dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    /* padding: 12px 16px; */
     text-decoration: none;
     display: block;
 }
@@ -199,8 +199,8 @@ header, .header1 .header2, .header3, .header4 {
 
 .dropdown-content a:hover {
     background-color:  #f47a3d;
-    text-align: center;
-    margin: auto;
+    /* text-align: center;
+    margin: auto; */
 }
 
 /*Show the dropdown menu on hover*/
