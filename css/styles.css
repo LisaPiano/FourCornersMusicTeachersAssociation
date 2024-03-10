@@ -191,9 +191,17 @@ header, .header1 .header2, .header3, .header4 {
     display: block;
 }
 
-/*change color of dropdown links on hover*/
+
+/*Change the color of dropdown links on hover*/
+
 .dropdown-content a:hover {
-    background-color: #f47a3d;
+    background-color:  #f47a3d;
+}
+
+/*Show the dropdown menu on hover*/
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 
