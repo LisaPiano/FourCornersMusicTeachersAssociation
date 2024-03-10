@@ -169,12 +169,12 @@ header, .header1 .header2, .header3, .header4 {
     padding-bottom: 12px; 
  }
  
- /*
+ 
 
  .dropdown {
     position: relative;
     display: inline-block;
- } */
+ }
 
  /*dropdown content hidden by default*/
 
