@@ -143,14 +143,14 @@ header, .header1 .header2, .header3, .header4 {
     padding-bottom: 12px; 
 } */
 
-.topnav a:hover {
+/* .topnav a:hover {
     background-color: #ddd;
     color: black;
     height: 34px;
     width: 150px; 
     margin-top: 10px; 
     padding-bottom: 12px; 
-}
+} */
 
 /* Change the color to show the active class to highlight the current page*/
 
