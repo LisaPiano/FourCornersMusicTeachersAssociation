@@ -199,13 +199,11 @@ header, .header1 .header2, .header3, .header4 {
 /*Change the color of dropdown links on hover*/
  .dropdown-content a:hover {
     background-color:  #f47a3d;
+    color: white;
 } 
 
 /*Show the dropdown menu on hover*/
 
-.dropdown:click .dropdown-content {
-    display: block;
-}
 
 
 /* End of styling for the DROPDOWN MENU===========================================*/
