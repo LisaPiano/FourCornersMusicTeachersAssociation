@@ -164,6 +164,17 @@ header, .header1 .header2, .header3, .header4 {
     padding-bottom: 12px; 
 }
 
+a.hov.hide.done:hover {
+    text-decoration: underline;
+    background-color: #ddd;
+    color: black;
+    height: 34px;
+    width: 150px; 
+    margin-top: 10px; 
+    padding-bottom: 12px; 
+
+}
+
 
 
 /* Styling for the DROPDOWN MENU===========================================*/
