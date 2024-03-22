@@ -178,30 +178,30 @@ header, .header1 .header2, .header3, .header4 {
 }
 
 /*The dropdown content is hidden by default*/
-.dropdown-content {
+/* .dropdown-content {
     /* display: none; */
-    color: white;
+    /* color: white;
     position: absolute;
     background-color: #f1f1f1;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     width: 100%;
-}
+} */ 
 /*Links inside the dropdown*/
-.dropdown-content a {
+/* .dropdown-content a {
     color: black;
     /* padding: 12px 16px; */
-    text-decoration: none;
+    /* text-decoration: none;
     display: block;
     width: 100%;
-}
+} */ 
 
 
 /*Change the color of dropdown links on hover*/
- .dropdown-content a:hover {
+ /* .dropdown-content a:hover {
     background-color:  #f47a3d;
     color: white;
-} 
+}  */
 
 /*Show the dropdown menu on hover*/
 
