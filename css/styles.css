@@ -560,7 +560,7 @@ li:first-child {
 
 /* Change the color of the nav links on hover, but NOT the logo*/
 
-.hide:hover {
+.topnav a:hover {
     background-color: #ddd;
     color: black;
     padding-left: 45px;
