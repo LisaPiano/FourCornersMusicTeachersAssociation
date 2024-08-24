@@ -382,6 +382,9 @@ figcaption {
     text-align: center;    
 }
 
+#emailInEvents {
+    font-size: 12px;
+}
 /* ==List of Teachers=======================================================================================  */
 
 .teachersBody {
