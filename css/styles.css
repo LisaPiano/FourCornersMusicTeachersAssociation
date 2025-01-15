@@ -103,7 +103,7 @@ header, .header1 .header2, .header3, .header4, .header5 {
 /* Style the overall nav bar */
 
 .topnav {
-    position: fixed; 
+    position:fixed; 
     top: 0; 
     z-index: 1;
     display: flex;
@@ -266,6 +266,7 @@ a.hov.hide.done:hover {
  img {
     height: 350px; 
     width: 300px; 
+    border-radius: 8px; 
 } 
 
 /* Styles for Container2=====================================================================  */
@@ -522,10 +523,26 @@ li:first-child {
     text-align: center;
 }
 
-#picsPA {
-    display: flex;
-    flex-direction: row; 
-    justify-content: center;
+#saveTheDate {
+    margin: 30px 5px 10px;
+}
+
+.question {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#hollyemail {
+    font-size: 16px;
+}
+#historicalPicsForPianoAcademy {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#schedulePA {
+    margin-top: 10px;
+    margin-right: 40px;
 }
 
 
@@ -653,6 +670,11 @@ footer {
 .imageBoard {
     width: 150px;
 }
+
+#picsPA {
+    display: flex;
+}
+
 
 }
 
