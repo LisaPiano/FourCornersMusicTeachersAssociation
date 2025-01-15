@@ -55,7 +55,7 @@ header, .header1 .header2, .header3, .header4 {
 }
 
 .header4 {
-    background-image: url(../images/euphonium.jpg);
+    background-image: url(../images/academy2025.jpg);
 }
 
 /* words--Four Corners Music Teachers Association */
@@ -492,7 +492,19 @@ li:first-child {
     height: auto;     
 }
 
+/* 
+==Piano Academy at Fort Lewis College======================================================================================= */
 
+#openingParagraph {
+    width: 80%;
+    margin: 10px auto; 
+    padding: 5px;
+}
+
+#firstWord {
+    font-size: 62px;
+    font-weight: bold;
+}
 
 
 /* Media Queries =====================================================================*/
