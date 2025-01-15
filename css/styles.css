@@ -13,6 +13,7 @@ body {
     font-family: 'Georama', sans-serif;
     overflow-y: scroll;
     overflow-x: hidden;
+    text-align: center;
 }
 
 .background {
@@ -505,7 +506,8 @@ li:first-child {
 } 
 
 .photo {
-    height: auto;     
+    height: auto;    
+    margin-bottom: 0px; 
 }
 
 /* 
@@ -525,19 +527,30 @@ li:first-child {
 
 #saveTheDate {
     margin: 30px 5px 10px;
+    border: 6px solid lightskyblue;
+    padding: 8px;
+}
+
+#saveTheDateHeading {
+    margin-bottom: 20px;
 }
 
 .question {
     font-size: 20px;
     font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.answer {
+    margin-bottom: 20px;
 }
 
 #hollyemail {
     font-size: 16px;
 }
 #historicalPicsForPianoAcademy {
-    margin-top: 30px;
-    text-align: center;
+    margin-top: 50px;
+    text-align: cener;
 }
 
 #schedulePA {
@@ -545,6 +558,14 @@ li:first-child {
     margin-right: 40px;
 }
 
+#pianoAcademyPicsTitle {
+    margin-bottom: 20px;
+}
+
+.description {
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
 
 
 /* Media Queries =====================================================================*/
@@ -569,7 +590,7 @@ li:first-child {
 /* for larger than mobile devices =====================================================================*/
 @media screen and (min-width: 769px) {
 
-    header, .header1 .header2, .header3, .header4 {
+    header, .header1 .header2, .header3, .header4, .header5{
         padding-top: 30px; 
     }
     
