@@ -21,13 +21,13 @@ body {
 }
 
 /* overall space taken up by main title */
-header, .header1 .header2, .header3, .header4 {
+header, .header1 .header2, .header3, .header4, .header5 {
     background-repeat: no-repeat;
     background-size: 100%; 
     transition: all .6s ease-in-out;
 }
 
-.header1, .header2, .header3, .header4 {
+.header1, .header2, .header3, .header4, .header5 {
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -55,6 +55,9 @@ header, .header1 .header2, .header3, .header4 {
 }
 
 .header4 {
+    background-image: url(../images/euphonium.jpg);
+}
+.header5 {
     background-image: url(../images/academy2025.jpg);
 }
 
@@ -70,6 +73,18 @@ header, .header1 .header2, .header3, .header4 {
     background-color: #f47a3d;
     color: white;
     margin-top: 310px; 
+}
+
+#titlePianoAcademy {
+    display: block;
+    width: 100%;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    background-color: lightskyblue;
+    color: white;
+    margin-top: 650px; 
 }
 
 .subtitle {
@@ -502,8 +517,11 @@ li:first-child {
 }
 
 #firstWord {
-    font-size: 62px;
+    font-size: 42px;
     font-weight: bold;
+    text-align: center;
+    display: inline;
+    border: 3px solid red;
 }
 
 
