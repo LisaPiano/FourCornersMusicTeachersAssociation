@@ -429,12 +429,11 @@ figcaption {
     margin-bottom: 80px;
 }
 
-.imageBoard {
-    height: 100px;
-    width: 100px;  
+.imageBoard { 
+    width: 100px; 
+    height: auto;
     margin-bottom: 40px; 
     margin-left: 10px; 
-    height: auto; 
 }
 
 .teacherList {
