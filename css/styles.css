@@ -376,6 +376,7 @@ figcaption {
 .event {
      padding: 40px;  
      line-height: 2em;
+     text-align: left;
 }    
 
 .contactConcert {
@@ -401,6 +402,13 @@ figcaption {
 #emailInEvents {
     font-size: 19px;
 }
+
+.mozart {
+    font-style: italic; 
+    color: #f47a3d;
+    font-weight: bold;
+}
+
 /* ==List of Teachers=======================================================================================  */
 
 .teachersBody {
