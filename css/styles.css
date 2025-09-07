@@ -342,16 +342,40 @@ figcaption {
         background-color: cornsilk; 
     }
 
-    footer {
+    footer{
         background-color: #333;
         color: white; 
         overflow: hidden;
         height: 80px; 
         bottom: 0;
-        padding-top: 20px;  
+        padding-top: 20px; 
+        padding-bottom: 20px; 
         width: 100%;
         text-align: center;
+        font-size: 15px;
     }
+
+    .fa-facebook-official {
+        margin-left: 20px; 
+        font-size: 15px; 
+        transition: all .2s ease-in-out;
+    }
+
+    #facebook {
+        color: white;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        font-size: 20px;
+        line-height: 2em;
+
+    }
+
+    #facebook:hover {
+        transform: scale(1.5, 1.5);
+        color: yellow;
+        background-color: black;
+    }
+
     
 
 /* upcomingEventsAndSchedule =====================================================================*/
