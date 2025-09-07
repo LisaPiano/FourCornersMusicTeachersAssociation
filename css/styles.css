@@ -65,10 +65,10 @@ header, .header1 .header2, .header3, .header4, .header5 {
 /* words--Four Corners Music Teachers Association */
 .title {
     display: block;
-    height: 220px; 
+    height: 120px; 
     width: 100vw;
     padding-top: 70px; 
-    padding-bottom: 20px; 
+    padding-bottom: 70px; 
     text-align: center;
     font-size: 45px;
     background-color: #f47a3d;
@@ -97,6 +97,32 @@ header, .header1 .header2, .header3, .header4, .header5 {
     height: 80px; 
 }
 
+#register {
+    font-size: 16px; 
+    padding: 10px; 
+    padding-left: 20px;
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+}
+
+.fa-angle-double-right {
+    transition: all .2s ease-in-out;
+    margin-right: 20px;
+    color: #551a8b;
+    transform: translate(0px,9px);
+}
+
+.fa-angle-double-left {
+    transition: all .2s ease-in-out;
+    margin-left: 20px;
+    color: #551a8b;
+    transform: translate(0px,9px);
+}
+
+.fa-angle-double-right:hover, .fa-angle-double-left:hover {
+    transform: translateX(18px);
+    transform: scale(1.3, 1.3); 
+}
 
 
 /* Style the responsive nav bar============================================================ */
@@ -732,6 +758,20 @@ footer {
 
 /* for larger devices =====================================================================*/
 @media screen and (min-width: 1025px) {
+
+
+#register {
+    font-size: 30px; 
+    padding: 10px; 
+    padding-left: 20px;
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+}
+
+.fa-angle-double-right, .fa-angle-double-left {
+    font-size: 30px;
+    transition: all .2s ease-in-out;
+}
 
 
 #childrenConcert {
