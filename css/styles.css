@@ -381,8 +381,8 @@ figcaption {
         font-size: 15px;
     }
 
-    .fa-facebook-official {
-        margin-left: 20px; 
+    .fa-facebook {
+        margin-left: 5px; 
         font-size: 15px; 
         transition: all .2s ease-in-out;
     }
@@ -393,11 +393,10 @@ figcaption {
         padding-bottom: 10px;
         font-size: 20px;
         line-height: 2em;
-
     }
 
-    #facebook:hover {
-        transform: scale(1.5, 1.5);
+    #facebook:hover, .fa-facebook:hover {
+        font-size: 23px;
         color: yellow;
         background-color: black;
     }
