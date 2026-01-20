@@ -5,101 +5,152 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Home page for Four Corners Music Teachers Association">
+
     <link rel="stylesheet" href="css/styles.css">
     <script src="script.js" async></script>
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Georama:wght@200&display=swap" rel="stylesheet">
+
     <title>Four Corners Music Teachers Association</title>
 </head>
 
 <body id="body">
 
-
     <div class="background">
-        <div class="topnav">
-            <a><i class="fa fa-bars icon" id="fa"></i></a>
-            <a href="index.html" class="active hide change" aria-label="link for the home page">Home</a>
-            <a href="upcomingEventsAndSchedule.html" class="hov hide change" aria-label="link for the upcoming events and schedules">Upcoming Events</a>
-            <a href="listOfTeachers.html" class="hov hide change" aria-label="link for the list of teachers">List of Members</a>
-            
-            <!-- ======================================================================================================= -->
-            <a href="photos.html" class="hov hide change" aria-label="link for 4CMTA photos">4CMTA photos</a>
-            <a href="pianoAcademy.html" class="hov hide change" aria-label="link for Piano Academy photos">Piano Academy!</a>
-            <!-- ============================================================================================================== -->
-            <a href="index.html"  aria-label="picture of 4CMTA logo"><img src="images/newLogo.png" class="logo logoTop" alt="4CMTA logo"></a>
-        </div>
+        <ul class="topnav">
+
+            <li>
+                <a><i class="fa fa-bars icon" id="fa"></i></a>
+            </li>
+
+            <!-- HOME with dropdown -->
+            <li class="dropdown-parent">
+                <a href="index.html" class="active hide change" aria-label="link for the home page">Home</a>
+
+                <ul class="submenu">
+                    <li><a href="boardOfDirectors.html">Board of Directors</a></li>
+                    <li><a href="teacherDirectory.html">Teacher Directory</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="upcomingEventsAndSchedule.html" class="hov hide change"
+                    aria-label="link for the upcoming events and schedules">Upcoming Events</a>
+            </li>
+
+            <li>
+                <a href="forms.html" class="hov hide change"
+                    aria-label="link for the forms">Forms</a>
+            </li>
+
+            <li>
+                <a href="photos.html" class="hov hide change" aria-label="link for 4CMTA photos">4CMTA photos</a>
+            </li>
+
+            <li>
+                <a href="pianoAcademy.html" class="hov hide change"
+                    aria-label="link for Piano Academy photos">Piano Academy!</a>
+            </li>
+
+        <li>
+            <a href="index.html" class="logoLink" aria-label="picture of 4CMTA logo">
+                <img src="images/newLogo.png" class="logo logoTop" alt="4CMTA logo">
+            </a>
+        </li>
+  
+
+        </ul>
+
         <header class="header1">
-            <h1 class="title">Four Corners Music Teachers Association<br>   
-          <span id="register"><i class="fas fa-angle-double-right fa-2x"></i>To join 4CMTA, click on <a href="https://www.mtna.org/" target="_blank" rel="noopener noreferrer" class="email">MTNA</a> or <a href="https://www.comusicteachers.org/" target="_blank" rel="noopener noreferrer" class="email">CSMTA</a><i class="fas fa-angle-double-left fa-2x"></i></span></h1>
+            <h1 class="title">
+                Four Corners Music Teachers Association<br>
+                <span id="register">
+                    <i class="fas fa-angle-double-right fa-2x"></i>
+                    To join 4CMTA, click on
+                    <a href="https://www.mtna.org/" target="_blank" rel="noopener noreferrer" class="email">MTNA</a>
+                    or
+                    <a href="https://www.comusicteachers.org/" target="_blank" rel="noopener noreferrer"
+                        class="email">CSMTA</a>
+                    <i class="fas fa-angle-double-left fa-2x"></i>
+                </span>
+            </h1>
         </header>
     </div>
-z
-   
-        <div class="container1">
-        
+
+    <div class="container1">
+
         <figure class="imageMika">
             <img src="images/mika.jpg" alt="picture of Mika Inouye">
             <figcaption class="figMika">Mika Inouye, President</figcaption>
         </figure>
 
         <div class="textMika">
-            <p>Greetings to you all! My name is Mika Inouye, and as President, I would like to welcome
-                you to our organization. I'm excited to share with you all of the recitals, programs and 
+            <p>
+                Greetings to you all! My name is Mika Inouye, and as President, I would like to welcome
+                you to our organization. I'm excited to share with you all of the recitals, programs and
                 events that 4CMTA has planned for the 2025-2026 year! 4CMTA endeavors to provide students with opportunities for education and
                 performances as
-                solosits and as chamber musicians. Our commitment to making and sharing music will persevere despite
-                pandemic adversity, and our continued involvement enables us to feel connected as a musical community. Our
-                parent organizations are the <a href="https://www.comusicteachers.org/" target="_blank" rel="noopener noreferrer" class="email">State Music
-                    Teachers Association (CSMTA)</a>
-                and the <a href="https://www.mtna.org/" target="_blank" rel="noopener noreferrer" class="email">Music Teachers National Association (MTNA).</a>Both of
-                these organizations
-                offer tremendous benefits and learning opportunities. I would be happy to talk with you more about joining
-                our associations, so
-                always feel free to contact me at <a href="mailto:mikainouye@gmail.com"
-                    class="email">mikainouye@gmail.com</a>
+                soloists and as chamber musicians. Our commitment to making and sharing music will persevere despite
+                pandemic adversity, and our continued involvement enables us to feel connected as a musical community.
+                Our parent organizations are the
+                <a href="https://www.comusicteachers.org/" target="_blank" rel="noopener noreferrer"
+                    class="email">State Music Teachers Association (CSMTA)</a>
+                and the
+                <a href="https://www.mtna.org/" target="_blank" rel="noopener noreferrer"
+                    class="email">Music Teachers National Association (MTNA)</a>.
+                Both of these organizations offer tremendous benefits and learning opportunities. I would be happy to
+                talk with you more about joining our associations, so always feel free to contact me at
+                <a href="mailto:mikainouye@gmail.com" class="email">mikainouye@gmail.com</a>.
             </p>
         </div>
-  
-
-
 
         <figure class="imageHolly">
             <img src="images/holly.jpg" alt="picture of Holly Quist">
             <figcaption class="figMika">Dr. Holly Quist, Vice President</figcaption>
         </figure>
-    
 
         <div class="textHolly">
-            <p>Welcome! My name is Dr. Holly Quist, and I'm delighted to serve the 4CMTA organization this year
-                as Vice President! I would be happy to talk with you more about joining
-                our associations, so
-                always feel free to contact me at <a href="mailto:hrquist@fortlewis.edu"
-                    class="email">hrquist@fortlewis.edu</a>
+            <p>
+                Welcome! My name is Dr. Holly Quist, and I'm delighted to serve the 4CMTA organization this year
+                as Vice President! I would be happy to talk with you more about joining our associations, so
+                always feel free to contact me at
+                <a href="mailto:hrquist@fortlewis.edu" class="email">hrquist@fortlewis.edu</a>.
             </p>
         </div>
+
     </div>
-  
-
-
-
-
-
 
     <div class="topButton">
-        <a href="index.html" aria-label="picture of the 4CMTA logo"><img src="images/newLogo.png" class="logo" alt="4CMTA logo"></a>
-        <a href="index.html" aria-label="picture of an arrow pointing up"><i class="fa fa-angle-double-up">TOP</i></a>
+        <a href="index.html" aria-label="picture of the 4CMTA logo">
+            <img src="images/newLogo.png" class="logo" alt="4CMTA logo">
+        </a>
+        <a href="index.html" aria-label="picture of an arrow pointing up">
+            <i class="fa fa-angle-double-up">TOP</i>
+        </a>
     </div>
 
-    <!-- FOOTER========================================================== -->
-     <footer>
-            <p class="footerText"><a href="https://www.facebook.com/profile.php?id=61565697042434#" target="_blank" rel="noopener noreferrer" class="email" id="facebook" aria-label="link to 4CMTA Facebook page">Follow us on Facebook!<i class="fa-brands fa-facebook"></i></a></p>
-            <p>&copy; 2021 Four Corners Music Teachers Association-All Rights Reserved. Website Designed by Lisa
-                Campi Walters. Logo designed by Shea Lynne Walters.</p>
-        </footer>
+    <footer>
+        <p class="footerText">
+            <a href="https://www.facebook.com/profile.php?id=61565697042434#" target="_blank"
+                rel="noopener noreferrer" class="email" id="facebook"
+                aria-label="link to 4CMTA Facebook page">
+                Follow us on Facebook!
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+        </p>
 
+        <p>
+            &copy; 2021 Four Corners Music Teachers Association — All Rights Reserved.
+            Website Designed by Lisa Campi Walters. Logo designed by Shea Lynne Walters.
+        </p>
+    </footer>
 
 </body>
 
