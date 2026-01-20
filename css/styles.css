@@ -38,23 +38,42 @@ header,
     background-repeat: no-repeat;
     background-size: cover;
     transition: all .2s ease-in-out;
+    background-color: black;
+    min-height: 350px; 
+    background-position: center;
+
 }
 
-/* Fade-in animation */
-.header1,
-.header2,
-.header3,
-.header4,
-.header5 {
-    animation: fadeInAnimation 2s ease forwards;
-    filter: blur(0.3px);
+header {
+    position: relative;
+    overflow: hidden;
+}
+
+/* overlay that sits ON TOP of the header image */
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: black;
+    opacity: 1;
+    pointer-events: none;
+    transition: opacity 2s ease;
+}
+
+header.loaded::before {
+    opacity: 0;
+}
+
+header.loaded {
+    background-color: transparent;
 }
 
 
-@keyframes fadeInAnimation {
-    0% { opacity: 0; }
+/* @keyframes fadeInAnimation {
+    0% { opacity: 0.01; }
     100% { opacity: 1; }
-}
+}  */
+
 
 /* Individual header images */
 .header1 { background-image: url(../images/Piano-keys.jpg); }
