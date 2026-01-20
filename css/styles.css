@@ -36,8 +36,8 @@ header,
 .header4,
 .header5 {
     background-repeat: no-repeat;
-    background-size: 100%;
-    transition: all .6s ease-in-out;
+    background-size: cover;
+    transition: all .2s ease-in-out;
 }
 
 /* Fade-in animation */
@@ -47,7 +47,9 @@ header,
 .header4,
 .header5 {
     animation: fadeInAnimation 2s ease forwards;
+    filter: blur(0.3px);
 }
+
 
 @keyframes fadeInAnimation {
     0% { opacity: 0; }
@@ -627,6 +629,45 @@ footer {
 #pianoAcademyPicsTitle {
     margin-bottom: 20px;
 }
+
+
+/* ================================
+   teacherDirectory Table
+   ================================ */
+
+.teacher-table {
+    width: 90%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background-color: white;
+    font-size: 18px;
+}
+
+.teacher-table th {
+    background-color: #9048bf; /* purple */
+    color: white;
+    padding: 12px;
+    border: 2px solid #545ec4; /* dark blue-purple */
+}
+
+.teacher-table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+.teacher-table tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+.teacher-table a {
+    color: #5987e2; /* light-blue */
+    text-decoration: none;
+}
+
+.teacher-table a:hover {
+    text-decoration: underline;
+}
+
 
 /* ================================
    Media Queries
