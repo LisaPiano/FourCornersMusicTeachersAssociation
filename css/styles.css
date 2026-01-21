@@ -190,98 +190,6 @@ header.loaded {
 }
 
 
-
-
-/* ================================
-   Dropdown Menu
-   ================================ */
-
-.dropdown-parent {
-    position: relative;
-    display: inline-block; /* ensures submenu anchors to the Home link */
-}
-
-.submenu {
-    display: none;
-    position: absolute;
-    top: 100%;   /* sits directly below Home */
-    left: 0;
-    background-color: #333;
-    padding: 10px 0;
-    list-style: none;
-    min-width: 180px;
-    border-radius: 4px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25)
-    z-index: 999;
-}
-
-.submenu li {
-    list-style: none;
-}
-
-.submenu a {
-    display: block;
-    padding: 10px 15px;
-    color: #f2f2f2;
-    text-align: left;
-    text-decoration: none;
-}
-.submenu a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.submenu li a {
-    display: block;
-    padding: 10px 20px;
-    text-decoration: none;
-    white-space: nowrap;
-}
-
-.submenu li a:hover {
-    background-color: #555;
-    color: white;
-}   
-
-/* Active submenu link */
-.submenu li a.active {
-    background-color: #f47a3d;
-    color: white;
-}
-
-.submenu {
-    opacity: 0;
-    transform: translateY(5px);
-    transition: opacity .2s ease, transform .2s ease;
-}
-
-.dropdown-parent:hover .submenu,
-.dropdown-parent.activeStayOpen .submenu {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
-}
-
-
-
-
-/* Show submenu on hover (desktop) */
-.dropdown-parent:hover .submenu {
-    display: block;
-}
-
-/* Keep submenu open when parent has .activeStayOpen */
-.dropdown-parent.activeStayOpen .submenu {
-    display: block;
-}
-
-
-
-/* Mobile-hidden links (shown when JS toggles them) */
-.change {
-    display: none;
-}
-
 /* Active link */
 .topnav a.active {
     background-color: #f47a3d;
@@ -295,6 +203,17 @@ a.hov:hover {
     background-color: #ddd;
     color: black;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 /* ================================
    Logo
@@ -693,22 +612,22 @@ footer {
    ================================ */
 
 .teacher-table {
-    width: 90%;
-    margin: 40px auto;
+    width: 95%;
+    margin: 10px auto;
     border-collapse: collapse;
     background-color: white;
-    font-size: 18px;
+    font-size: 10px;
 }
 
 .teacher-table th {
     background-color: #9048bf; /* purple */
     color: white;
-    padding: 12px;
+    padding: 6px;
     border: 2px solid #545ec4; /* dark blue-purple */
 }
 
 .teacher-table td {
-    padding: 12px;
+    padding: 6px;
     border: 1px solid #ccc;
 }
 
@@ -896,6 +815,73 @@ footer {
         color: black;
     }
 
+
+    
+/* ================================
+   Dropdown Menu
+   ================================ */
+
+.dropdown-parent {
+    position: relative;
+    display: inline-block;
+}
+
+/* Submenu container */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    padding: 10px 0;
+    list-style: none;
+    min-width: 180px;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    z-index: 999;
+
+    /* animation */
+    opacity: 0;
+    transform: translateY(5px);
+    transition: opacity .2s ease, transform .2s ease;
+}
+
+/* Submenu links */
+.submenu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #f2f2f2;
+    text-decoration: none;
+    white-space: nowrap;
+    text-align: left;
+}
+
+/* Hover state */
+.submenu li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+/* Active submenu link */
+.submenu li a.active {
+    background-color: #f47a3d;
+    color: white;
+}
+
+/* Show submenu on hover or when activeStayOpen is applied */
+.dropdown-parent:hover .submenu,
+.dropdown-parent.activeStayOpen .submenu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* When the mobile menu is open, show the submenu */
+.topnav.open .submenu {
+    display: block;
+}
+
+
     .title {
         font-size: 60px;
         height: 140px;
@@ -949,6 +935,28 @@ footer {
         display: flex;
         justify-content: center;
     }
+
+
+    
+/* ================================
+   teacherDirectory Table
+   ================================ */
+
+
+
+   .teacher-table {
+    width: 90%;
+    margin: 20px auto;
+    font-size: 16px;
+}
+
+.teacher-table th {
+    padding: 12px;
+}
+
+.teacher-table td {
+    padding: 12px;
+}
 }
 
 
