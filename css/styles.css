@@ -203,16 +203,94 @@ a.hov:hover {
     background-color: #ddd;
     color: black;
 }
+/*  */
+/* =================Hamburger Menu================================= */
+/* ============================
+   MOBILE FIRST NAV
+   ============================ */
+
+
+
+.mobile-nav {
+    background: #333;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centers the hamburger */
+}
+
+/* Hamburger button */
+.hamburger {
+    width: 35px;
+    height: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.hamburger span {
+    display: block; display: flex;
+    flex-direction: column;
+    align-items: center; /* centers the hamburger */
+    height: 4px;
+    width: 100%;
+    background: #fff;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Animate into X */
+.hamburger.active span:nth-child(1) {
+    transform: translateY(12px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-12px) rotate(-45deg);
+}
+
+/* Hide menu by default */
+.nav-links {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    padding: 10px 0;
+}
+
+.nav-links.open {
+    display: flex;
+}
+
+.nav-links a {
+    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.nav-links a:hover {
+    background: #555;
+}
+
+/* Submenu (mobile: always visible when parent is visible) */
+.submenu {
+    padding-left: 20px;
+}
 
 
 
 
 
 
-
-
-
-
+/* =================Hamburger Menu================================= */
 
 
 /* ================================
@@ -757,7 +835,7 @@ footer {
    ========================================= */
 @media screen and (min-width: 769px) {
 
-    /* FIXED: broken selector */
+    /* Keep your header spacing */
     header,
     .header1,
     .header2,
@@ -768,120 +846,109 @@ footer {
     }
 
     /* Hide hamburger on desktop */
-    #fa {
+    .hamburger {
         display: none;
     }
 
     /* Desktop nav layout */
-   
-
-    .topnav {
-    display: flex;
-    flex-direction: row;
-    background-color: #333;
-    height: 60px; /* optional: gives breathing room */
-    padding-top: 20px; /* adjust this value */
-    padding-bottom: 20px; /* optional: reduces huge bottom padding */
-    line-height: 2.5em;
-    text-align: center;
-}
-
-
-    /* Desktop links always visible */
-    .change {
-        display: block;
-        padding-top: 0;
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #333;
+        height: 60px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        line-height: 2.5em;
+        text-align: center;
     }
 
-    .topnav a {
+    /* Desktop links always visible */
+    .nav-links a {
         width: auto;
         padding: 10px 20px;
         margin-top: 0;
         margin-right: 20px;
         margin-left: 20px;
         margin-bottom: 0;
+        color: #f2f2f2;
+        text-decoration: none;
     }
-    
 
-    .topnav a.active {
+    .nav-links a.active {
         background-color: #f47a3d;
         color: white;
         padding: 10px 20px;
         height: auto;
     }
 
-    .topnav a:hover {
+    .nav-links a:hover {
         background-color: #ddd;
         color: black;
     }
 
+    /* ================================
+       Dropdown Menu (Desktop)
+       ================================ */
 
-    
-/* ================================
-   Dropdown Menu
-   ================================ */
+    .dropdown-parent {
+        position: relative;
+        display: inline-block;
+    }
 
-.dropdown-parent {
-    position: relative;
-    display: inline-block;
-}
+    /* Submenu container */
+    .submenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #333;
+        padding: 10px 0;
+        list-style: none;
+        min-width: 180px;
+        border-radius: 4px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+        z-index: 999;
 
-/* Submenu container */
-.submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #333;
-    padding: 10px 0;
-    list-style: none;
-    min-width: 180px;
-    border-radius: 4px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-    z-index: 999;
+        /* animation */
+        opacity: 0;
+        transform: translateY(5px);
+        transition: opacity .2s ease, transform .2s ease;
+    }
 
-    /* animation */
-    opacity: 0;
-    transform: translateY(5px);
-    transition: opacity .2s ease, transform .2s ease;
-}
+    /* Submenu links */
+    .submenu li a {
+        display: block;
+        padding: 10px 20px;
+        color: #f2f2f2;
+        text-decoration: none;
+        white-space: nowrap;
+        text-align: left;
+    }
 
-/* Submenu links */
-.submenu li a {
-    display: block;
-    padding: 10px 20px;
-    color: #f2f2f2;
-    text-decoration: none;
-    white-space: nowrap;
-    text-align: left;
-}
+    /* Hover state */
+    .submenu li a:hover {
+        background-color: #555;
+        color: white;
+    }
 
-/* Hover state */
-.submenu li a:hover {
-    background-color: #555;
-    color: white;
-}
+    /* Active submenu link */
+    .submenu li a.active {
+        background-color: #f47a3d;
+        color: white;
+    }
 
-/* Active submenu link */
-.submenu li a.active {
-    background-color: #f47a3d;
-    color: white;
-}
-
-/* Show submenu on hover or when activeStayOpen is applied */
-.dropdown-parent:hover .submenu,
-.dropdown-parent.activeStayOpen .submenu {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* When the mobile menu is open, show the submenu */
-.topnav.open .submenu {
-    display: block;
-}
+    /* Show submenu on hover or when activeStayOpen is applied */
+    .dropdown-parent:hover .submenu,
+    .dropdown-parent.activeStayOpen .submenu {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+    }
 
 
+
+/* ================================================= */
     .title {
         font-size: 60px;
         height: 140px;
