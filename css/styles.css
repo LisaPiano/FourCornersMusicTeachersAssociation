@@ -142,7 +142,7 @@ header.loaded {
 
 
 /* ================================
-   Responsive Navigation Bar
+   Responsive Navigation Bar in MOBILE FIRST-DEFAULT LAYOUT!!!
    ================================ */
 
 .topnav {
@@ -185,6 +185,8 @@ header.loaded {
     text-decoration: none;
     font-size: 17px;
     margin-bottom: 5px;
+    padding: 8px 20px;
+
 }
 
 
@@ -206,8 +208,10 @@ header.loaded {
     left: 0;
     background-color: #333;
     padding: 10px 0;
-    width: 180px;
+    list-style: none;
+    min-width: 180px;
     border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25)
     z-index: 999;
 }
 
@@ -226,6 +230,40 @@ header.loaded {
     background-color: #ddd;
     color: black;
 }
+
+.submenu li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.submenu li a:hover {
+    background-color: #555;
+    color: white;
+}   
+
+/* Active submenu link */
+.submenu li a.active {
+    background-color: #f47a3d;
+    color: white;
+}
+
+.submenu {
+    opacity: 0;
+    transform: translateY(5px);
+    transition: opacity .2s ease, transform .2s ease;
+}
+
+.dropdown-parent:hover .submenu,
+.dropdown-parent.activeStayOpen .submenu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
 
 /* Show submenu on hover (desktop) */
 .dropdown-parent:hover .submenu {
@@ -249,7 +287,6 @@ header.loaded {
     background-color: #f47a3d;
     color: white;
     padding: 8px 20px;
-    border-radius: 4px;
 }
 
 /* Hover state for links */
@@ -264,6 +301,7 @@ a.hov:hover {
    ================================ */
 
 .logo {
+    margin-top: 20px;
     height: 80px;
     width: 80px;
     transition: all .2s ease-in-out;
@@ -282,9 +320,9 @@ a.hov:hover {
 }
 
 
-.logoTop {
-    margin-bottom: 145px;
-}
+/* .logoTop {
+    margin-bottom: 100px;
+} */
 
 /* ================================
    Global image styling
@@ -372,7 +410,7 @@ figcaption {
     margin: 0 auto;
 }
 
-
+/* top button the hover effect */
 
 .fa-angle-double-up,
 .fa-angle-double-upTeach {
@@ -381,13 +419,13 @@ figcaption {
 }
 
 .fa-angle-double-up:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
     color: yellow;
     background-color: lightgray;
 }
 
 .fa-angle-double-upTeach:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
     color: purple;
     background-color: cornsilk;
 }
@@ -837,11 +875,14 @@ footer {
     }
 
     .topnav a {
-        margin: 0 20px;
         width: auto;
         padding: 10px 20px;
         margin-top: 0;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 0;
     }
+    
 
     .topnav a.active {
         background-color: #f47a3d;
@@ -864,10 +905,6 @@ footer {
 
     .logoTop {
         margin-bottom: 0;
-    }
-
-    .logo:hover {
-        transform: scale(1.7);
     }
 
     .container2 {
@@ -910,6 +947,7 @@ footer {
 
     #picsPA {
         display: flex;
+        justify-content: center;
     }
 }
 
