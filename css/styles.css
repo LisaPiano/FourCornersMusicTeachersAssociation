@@ -282,9 +282,18 @@ a.hov:hover {
     color: #fff;
     padding: 12px 20px;
     text-decoration: none;
-    display: block;
-    
+    display: block; 
 }
+
+.nav-links,
+.nav-links li,
+.submenu,
+.submenu li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 
 .nav-links a:hover {
     background: #555;
