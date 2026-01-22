@@ -242,6 +242,7 @@ a.hov:hover {
     padding: 0;
 }
 
+
 .hamburger span {
     display: block; display: flex;
     flex-direction: column;
@@ -251,6 +252,11 @@ a.hov:hover {
     background: #fff;
     border-radius: 2px;
     transition: all 0.3s ease;
+}
+
+.hamburger:hover span {
+    background: yellow;
+    height: 5px;
 }
 
 /* Animate into X */
