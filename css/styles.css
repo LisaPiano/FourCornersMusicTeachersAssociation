@@ -572,14 +572,20 @@ footer {
 .sub {
     font-size: 20px;
     margin-top: 30px;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
 }
+
+/* Make sure that chair names are not running into each other in small screens */
+ .chairs {
+    margin: 10px 0;
+ }
 
 .imageBoard {
     width: 100px;
     height: auto;
     margin-bottom: 40px;
     margin-left: 10px;
+    margin-top: 15px;
 }
 
 .teacherList {
@@ -1017,7 +1023,8 @@ footer {
     }
 
     .boardOfDirectors {
-        line-height: 3.5em;
+        line-height: 1.5em;
+        margin: 40px;
     }
 
     .imageBoard {
