@@ -1121,3 +1121,11 @@ footer {
 
 
 
+@media (hover: hover) and (pointer: fine) {
+    .hamburger:hover span {
+        background: yellow;
+        height: 5px;
+    }
+}
+
+
