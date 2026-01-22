@@ -86,8 +86,9 @@ header.loaded {
 .title {
     display: block;
     width: 100vw;
-    height: 120px;
-    padding: 70px 0;
+    height: 80px;
+    padding-top: 30px;
+    padding-bottom: 120px;
     text-align: center;
     font-size: 45px;
     background-color: #f47a3d;
@@ -122,6 +123,11 @@ header.loaded {
     font-size: 16px;
     padding: 10px 0 10px 20px;
     margin: 10px 0;
+}
+
+#registerDiv {
+    padding: 30px 0 0;
+    margin-bottom: 50px;
 }
 
 /* Arrow icons */
@@ -162,6 +168,10 @@ header.loaded {
     list-style: none;
 }
 
+.nav-links li,
+.submenu li {
+    list-style: none;
+}
 
 
 /* Hamburger icon (mobile) */
@@ -186,7 +196,6 @@ header.loaded {
     font-size: 17px;
     margin-bottom: 5px;
     padding: 8px 20px;
-
 }
 
 
@@ -274,6 +283,7 @@ a.hov:hover {
     padding: 12px 20px;
     text-decoration: none;
     display: block;
+    
 }
 
 .nav-links a:hover {
@@ -750,7 +760,8 @@ footer {
     flex-direction: column;   /* vertical stacking */
     align-items: center;      /* centers the items horizontally */
     gap: 40px;                /* spacing between items */
-    padding-left: 0;
+    padding-left: 34px;
+    padding-right: 34px;
     list-style: none;
     margin-top: 40px;
     margin-bottom: 160px;
@@ -816,7 +827,7 @@ footer {
 @media screen and (min-width: 481px) {
 
     .title {
-        height: 100px;
+        height: 60px;
     }
 
     .teacherName {
@@ -951,7 +962,7 @@ footer {
 /* ================================================= */
     .title {
         font-size: 60px;
-        height: 140px;
+        height: 30px;
         padding-top: 40px;
         margin-top: 300px;
     }
