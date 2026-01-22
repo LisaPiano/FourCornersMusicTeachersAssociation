@@ -254,10 +254,6 @@ a.hov:hover {
     transition: all 0.3s ease;
 }
 
-.hamburger:hover span {
-    background: yellow;
-    height: 5px;
-}
 
 /* Animate into X */
 .hamburger.active span:nth-child(1) {
@@ -1120,6 +1116,7 @@ footer {
 }
 
 
+/* Make sure that hover state doesn't last on touch devices */
 
 @media (hover: hover) and (pointer: fine) {
     .hamburger:hover span {
@@ -1127,5 +1124,3 @@ footer {
         height: 5px;
     }
 }
-
-
