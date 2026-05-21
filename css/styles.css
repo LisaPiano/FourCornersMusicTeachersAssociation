@@ -122,8 +122,29 @@ header.loaded {
 #register {
     font-size: 16px;
     padding: 10px 0 10px 20px;
-    margin: 10px 0;
+    margin: 20px;
+    width: 40%;
+    background-color: lightyellow;
+    color: #9048bf;
+    font-weight: bold;
+    border: 3px solid #f47a3d;
 }
+
+ /* #newPianoAcademy {
+    background-color: lightyellow;
+    padding: 20px;
+    width: 50%;
+    height: auto;
+    float: right;
+    margin: 20px;
+    margin-bottom: 50px;
+    border-radius: 8px;
+    font-size: 25px;
+    color: #9048bf;
+    font-weight: bold;
+    border: 3px solid #f47a3d;
+} */
+
 
 #registerDiv {
     padding: 30px 0 0;
@@ -356,6 +377,22 @@ img {
    Container + Text Blocks
    ================================ */
 
+   #newPianoAcademy {
+    background-color: lightyellow;
+    padding: 20px;
+    width: 40%;
+    height: auto;
+    float: right;
+    margin: 20px;
+    margin-bottom: 50px;
+    border-radius: 8px;
+    font-size: 25px;
+    color: #9048bf;
+    font-weight: bold;
+    border: 3px solid #f47a3d;
+}
+
+ 
 .container1 {
     width: 80%;
     height: 100%;
@@ -1068,11 +1105,7 @@ footer {
    ========================================= */
 @media screen and (min-width: 1025px) {
 
-    #register {
-        font-size: 30px;
-        padding: 10px 20px;
-        margin: 10px 0;
-    }
+
 
     .fa-angle-double-right,
     .fa-angle-double-left {
