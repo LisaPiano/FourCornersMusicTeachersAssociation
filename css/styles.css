@@ -752,9 +752,17 @@ footer {
     height: 100%;
     width: 100%;
     margin-bottom: 20px;
-
 }
 
+#registration-form {
+    font-size: 40px;
+    font-weight: bold;
+    color: #1f4fd6;
+    background: lightcyan;
+    border-radius: 8px;
+    padding: 20px;
+
+}
 
 /* ================================
    teacherDirectory Table
