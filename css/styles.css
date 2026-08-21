@@ -534,7 +534,7 @@ footer {
 
 .eventHeadingPara {
     text-align: center;
-    font-size: 45px;
+    font-size: 40px;
 }
 
 .eventHeading {
@@ -546,6 +546,7 @@ footer {
     padding: 40px;
     line-height: 1.5em;
     text-align: left;
+    font-size: 20px;
 }
 
 .contactConcert {
