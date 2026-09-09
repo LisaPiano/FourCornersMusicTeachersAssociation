@@ -130,22 +130,6 @@ header.loaded {
     border: 3px solid #f47a3d;
 }
 
- /* #newPianoAcademy {
-    background-color: lightyellow;
-    padding: 20px;
-    width: 50%;
-    height: auto;
-    float: right;
-    margin: 20px;
-    margin-bottom: 50px;
-    border-radius: 8px;
-    font-size: 25px;
-    color: #9048bf;
-    font-weight: bold;
-    border: 3px solid #f47a3d;
-} */
-
-
 #registerDiv {
     padding: 30px 0 0;
     margin-bottom: 50px;
@@ -377,21 +361,34 @@ img {
    Container + Text Blocks
    ================================ */
 
-   #newPianoAcademy {
-    background-color: lightyellow;
+   #newSpecialEvent {
+    background-color: black;
     padding: 20px;
-    width: 40%;
+    width: 30%;
     height: auto;
     float: right;
     margin: 20px;
     margin-bottom: 50px;
     border-radius: 8px;
     font-size: 25px;
-    color: #9048bf;
+    color: white;
     font-weight: bold;
     border: 3px solid #f47a3d;
 }
 
+#newSpecialEvent p {
+    margin-bottom: 20px;
+}
+
+#newSpecialEvent img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+#newSpecialEvent span {
+    color: #f47a3d;
+}
  
 .container1 {
     width: 80%;
@@ -400,6 +397,11 @@ img {
     margin: 0 auto;
     text-align: center;
 }
+
+.imageMika {
+    float: left;
+}
+
 
 .textMika,
 .textHolly {
